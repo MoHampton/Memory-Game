@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Matching Game</title>
+    <title>Mo's Matching Game</title>
     <meta name="description" content="">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -17,13 +18,13 @@
 
         <section class="score-panel">
         	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
+        		<li id="firstStar"><i class="fa fa-star"></i></li>
+        		<li id="secondStar"><i class="fa fa-star"></i></Sli>
+        		<li id="thirdStar"><i class="fa fa-star"></i></li>
         	</ul>
 
-        	<span class="moves">3</span> Moves
-
+        	<span class="moves">0</span> Moves
+            <div class="timer"><i class="fa fa-Swatch"></i> <span>0</span><span> s</span></div>
             <div class="restart">
         		<i class="fa fa-repeat"></i>
         	</div>
@@ -79,6 +80,23 @@
                 <i class="fa fa-cube"></i>
             </li>
         </ul>
+    </div>
+
+    <!-- A little modal action -->
+    <div class="modal">
+        <div class="modal-content animated fadeInUpBig">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>
+                <h2>Congratulations!</h2>
+            </div>
+            <div class="modal-body">
+                <p>You finished the game in <span class="modal-time">20</span> seconds!</p>
+                <p id="score">Your Score: <span class="modal-stars"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-button">Play Again?</button>
+            </div>
+        </div>        
     </div>
 
     <script src="js/app.js"></script>
