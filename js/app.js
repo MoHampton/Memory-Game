@@ -115,15 +115,15 @@ function removeStar() {
     let thirdStar = document.querySelector('#thirdStar');
     let secondStar = document.querySelector('#secondStar');
     let firstStar = document.querySelector('#firstStar');
-    if (count>22) {
+    if (count > 30) {
         //firstStar.parentNode.removeChild(firstStar);
         //stars.parentNode.removeChild(thirdStar);
         //stars.removeChild(stars.childNodes[2]);
         stars[2].innerHTML = '<i class="fa fa-star" style="color:lightgray;"></i>';
-    } if (count>30) {
+    } if (count > 36) {
         stars[1].innerHTML = '<i class="fa fa-star" style="color:lightgray;"></i>';
         //secondStar.parentNode.removeChild(secondStar);
-    } if (count>36) {
+    } if (count > 42) {
         stars[0].innerHTML = '<i class="fa fa-star" style="color:lightgray;"></i>';
         //firstStar.parentNode.removeChild(firstStar);
         //thirdStar.parentNode.removeChild(thirdStar);
